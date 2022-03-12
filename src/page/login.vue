@@ -38,8 +38,8 @@ export default {
     data() {
         return {
             loginForm: {
-                username: '',
-                password: '',
+                username: 'admin',
+                password: '123456',
             },
             // 表单验证规则
             rules: {
@@ -49,7 +49,7 @@ export default {
                 ],
                 password: [
                     { required: true, message: '请输入密码', trigger: 'blur' },
-                    { min: 6, max: 15, message: '长度在 3 到 15 个字符', trigger: 'blur' }
+                    { min: 6, max: 15, message: '长度在 6 到 15 个字符', trigger: 'blur' }
                 ]
             }
         }
