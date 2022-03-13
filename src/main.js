@@ -4,7 +4,12 @@ import router from './router'
 
 // 导入element-ui插件
 import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css';
+import 'element-ui/lib/theme-chalk/index.css'
+
+// 导入树形表格库
+import TreeTable from 'vue-table-with-tree-grid'
+// 全局注册tree-table组件
+Vue.component('tree-table', TreeTable);
 
 // 导入axios
 import axios from 'axios';
