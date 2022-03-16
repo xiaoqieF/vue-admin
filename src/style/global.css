@@ -3,3 +3,8 @@ html, body, #app{
     padding: 0;
     height: 100%;
 }
+
+/* 富文本框全局样式 */
+.ql-editor{
+    min-height: 300px;
+}

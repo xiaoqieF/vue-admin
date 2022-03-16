@@ -11,6 +11,15 @@ import TreeTable from 'vue-table-with-tree-grid'
 // 全局注册tree-table组件
 Vue.component('tree-table', TreeTable);
 
+// 导入富文本编辑器组件
+import VueQuillEditor from 'vue-quill-editor'
+// 导入富文本编辑器组件样式
+import 'quill/dist/quill.core.css' // import styles
+import 'quill/dist/quill.snow.css' // for snow theme
+import 'quill/dist/quill.bubble.css' // for bubble theme
+
+Vue.use(VueQuillEditor)
+
 // 导入axios
 import axios from 'axios';
 // 配置请求根路径
@@ -27,6 +36,12 @@ Vue.prototype.$http = axios
 
 // 导入全局样式
 import './style/global.css'
+// 导入dayjs库用于时间格式化
+import dayjs from 'dayjs'
+// 注册全局时间格式化过滤器
+Vue.filter('dateFormat', function(originTime, format='YYYY年MM月DD日 HH:mm:ss'){
+  return dayjs(originTime).format(format);
+})
 
 
 Vue.use(ElementUI)
