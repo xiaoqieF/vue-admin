@@ -32,42 +32,52 @@ const router = new VueRouter({
                 {
                     path: '',
                     component: welcome,
+                    meta: ['欢迎']
                 },
                 {
                     path: '/users',
                     component: users,
+                    meta: ['用户管理','用户列表']
                 },
                 {
                     path: '/rights',
                     component: rights,
+                    meta: ['权限管理','权限列表']
                 },
                 {
                     path: '/roles',
                     component: roles,
+                    meta: ['权限管理','角色列表']
                 },
                 {
                     path: '/categories',
                     component: categories,
+                    meta: ['商品管理','商品分类']
                 },
                 {
                     path: '/params',
                     component: params,
+                    meta: ['商品管理','分类参数']
                 },
                 {
                     path: '/goods',
                     component: goodsList,
+                    meta: ['商品管理','商品列表']
                 },
                 {
                     path: '/addGoods',
                     component: addGoods,
+                    meta: ['商品管理','商品列表','添加商品']
                 },
                 {
                     path: '/orders',
                     component: orders,
+                    meta: ['订单管理','订单列表']
                 },
                 {
                     path: '/reports',
                     component: report,
+                    meta: ['数据统计','数据报表']
                 },
             ]
         },
